@@ -1,0 +1,42 @@
+<div class="dialog-ionic-new-project template modal">
+    <div class="loader"><div class="gif"></div></div>
+    <div class="modal-header">
+        <h1 class="dialog-title">Ionic - Create New Project</h1>
+    </div>
+    <div class="modal-body">
+        <div class="dialog-message">
+            <form>
+                <div class="control-group">
+                    <label class="control-label" for="ionic-new-name">Name</label>
+                    <div class="controls">
+                        <input id="ionic-new-name" type="text" placeholder="ProjectName">
+                        <span class="help-inline hide">Please correct the error (no empty)</span>
+                    </div>
+                </div>
+                
+                <div class="control-group">
+                    <label class="control-label">Type</label>
+                    <div class="controls">
+                        <label for="ionic-new-type-blank"><input type="radio" id="ionic-new-type-blank" name="ionic-new-type" value="blank" checked> blank</label>
+                        <label for="ionic-new-type-tabs"><input type="radio" id="ionic-new-type-tabs" name="ionic-new-type" value="tabs"> tabs</label>
+                        <label for="ionic-new-type-sidemenu"><input type="radio" id="ionic-new-type-sidemenu" name="ionic-new-type" value="sidemenu"> sidemenu</label>
+                    </div>
+                </div>
+                                
+                <div class="control-group">
+                    <label class="control-label" for="ionic-new-dest">Destination</label>
+                    <div class="controls">
+                        <input id="ionic-new-dest" type="text">
+                        <span class="help-inline hide">Please correct the error (no empty)</span>
+                    </div>
+                </div>
+                
+                <a id="ionic-new-dest-change" class="dialog-button btn">Change...</a>
+            </form>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button class="dialog-button btn">Cancel</button>
+        <button class="dialog-button btn primary" id="ionic-new-submit">Ok</button>
+    </div>
+</div>

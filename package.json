@@ -1,0 +1,11 @@
+{
+    "name": "asi.ionic",
+    "title": "Ionic",
+    "description": "Ionic plugin for Brackets editor. Required ios-deploy (sudo npm install -g ios-deploy) and ios-sim (sudo npm install -g ios-sim).",
+    "version": "0.1.0",
+    "author": "ASI Informatique <jguichot@asi-informatique.fr>",
+    "license": "MIT",
+    "engines": {
+        "brackets": ">=0.38.0"
+    }
+}

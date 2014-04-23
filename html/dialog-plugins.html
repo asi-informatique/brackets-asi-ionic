@@ -1,0 +1,39 @@
+<div class="dialog-ionic-plugins template modal">
+    <div class="loader"><div class="gif"></div></div>
+    <div class="modal-header">
+        <h1 class="dialog-title pull-left">Ionic - Plugins</h1>
+        <p class="info pull-right">
+            <span class="total">0</span> plugins installed<br />
+            <a href="http://plugins.cordova.io">Apache Cordova plugins registry</a>
+        </p>
+        <div class="clearfix"></div>
+    </div>
+    <div class="modal-body">
+        <div class="dialog-message">
+            <form>
+                <div class="input-append">
+                    <input id="ionic-plugins-add" type="text" placeholder="ex: org.apache.cordova.core.console" class="span5">
+                    <button id="ionic-plugins-add-submit" type="button" class="btn">Add</button>
+                </div>
+                
+                <div class="input-append">
+                    <input id="ionic-plugins-remove" type="text" placeholder="ex: org.apache.cordova.core.console" class="span5">
+                    <button id="ionic-plugins-remove-submit" type="button" class="btn">Remove</button>
+                </div>
+            </form>
+            
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button class="dialog-button btn">Ok</button>
+    </div>
+</div>
