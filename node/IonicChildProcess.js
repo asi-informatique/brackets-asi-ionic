@@ -20,7 +20,14 @@
             output = "";
         
         //proc = spawn(ionic, acmd, {cwd: directoryPath});
-        proc = exec("export PATH=/usr/local/bin:$PATH &&" + command, {cwd: directoryPath});
+        var isWin = /^win/.test(process.platform);
+		var exportPath="";
+		
+		if(!isWin){
+		exportPath="export PATH=/usr/local/bin:$PATH &&";
+		}
+		
+		proc = exec(exportPath + command, {cwd: directoryPath});
         proc.stdout.on("data", function (data) {
             output += data;
         });
